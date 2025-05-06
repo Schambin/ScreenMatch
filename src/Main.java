@@ -8,7 +8,17 @@ public class Main {
         filmeUm.movieName = "Rio";
         filmeUm.durationInMinutes= 180;
         filmeUm.includedInPlan = true;
-        filmeUm.movieRate = 10;
+        filmeUm.movieRateSum = 10;
+
+        filmeUm.showMovieInfo();
+        filmeUm.rateMovie(10);
+        filmeUm.rateMovie(5);
+        filmeUm.rateMovie(7);
+
+        System.out.println(filmeUm.movieRateSum);
+        System.out.println(filmeUm.totalRate);
+
+        System.out.println(filmeUm.averageMovieRate());
 
     }
 }
